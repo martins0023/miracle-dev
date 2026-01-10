@@ -1,0 +1,24 @@
+---
+title: "Securing React Applications: Beyond Sanitization"
+date: "2024-02-15"
+excerpt: "Exploring advanced techniques for preventing XSS in modern React frameworks and why 'dangerouslySetInnerHTML' is just the tip of the iceberg."
+category: "Security"
+readTime: "8 min read"
+featured: true
+---
+
+# Introduction
+
+When we talk about **React Security**, most developers stop at the comforting phrase: *"React escapes input by default."* While true, this false sense of security is exactly what sophisticated attackers exploit. 
+
+As a Frontend Engineer studying Cybersecurity, I often see applications that are functionally perfect but structurally vulnerable.
+
+## The "Dangerous" Prop
+
+It's named `dangerouslySetInnerHTML` for a reason, yet I see it used for rendering CMS content constantly.
+
+```jsx
+// ❌ VULNERABLE: Trusting the API blindly
+function UserBio({ bio }) {
+  return <div dangerouslySetInnerHTML={{ __html: bio }} />;
+}

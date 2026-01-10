@@ -1,0 +1,26 @@
+---
+title: "Optimizing Frontend Performance for Low-Bandwidth Networks"
+date: "2024-01-22"
+excerpt: "Lessons learned building 'doctorkays.com' for the Nigerian market. How to use aggressive caching and code-splitting."
+category: "Engineering"
+readTime: "6 min read"
+featured: false
+---
+
+# The Reality of Internet in Emerging Markets
+
+Building **doctorkays.com** presented a unique challenge. Unlike testing on a Gigabit connection in London, our users in Nigeria often access the web via 3G mobile networks with high latency.
+
+A 5MB JavaScript bundle isn't just "slow" here—it's a bounce rate of 90%.
+
+## Strategy 1: Aggressive Code Splitting
+
+We used Next.js dynamic imports to break the application into tiny chunks. The video consultation module, which is heavy (WebRTC libraries), is never loaded until the user actually enters a consultation room.
+
+```tsx
+import dynamic from 'next/dynamic';
+
+const VideoRoom = dynamic(() => import('@/components/VideoRoom'), {
+  loading: () => <p>Loading secure connection...</p>,
+  ssr: false, // WebRTC doesn't work on server anyway
+})

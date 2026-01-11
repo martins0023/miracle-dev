@@ -92,7 +92,7 @@ export default function ConnectPage() {
             <h3 className="text-sm font-bold uppercase tracking-wider text-blue-400 mb-2">
               Primary Channel
             </h3>
-            <p className="text-2xl font-heading font-bold mb-6">
+            <p className="text-xl font-heading font-bold mb-6">
               hello@miracleoladapo.dev
             </p>
 

@@ -169,7 +169,7 @@ export default function AboutPage() {
                     Based In
                   </span>
                   <div className="flex items-center gap-1.5 text-sm font-medium">
-                    <Globe className="w-3.5 h-3.5 text-cyan-400" /> Lagos / UK
+                    <Globe className="w-3.5 h-3.5 text-cyan-400" /> Lagos
                   </div>
                 </div>
                 <div className="p-3 bg-muted/30 rounded-xl border border-white/5 hover:bg-muted/50 transition-colors">

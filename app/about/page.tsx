@@ -79,18 +79,7 @@ export default function AboutPage() {
           </motion.h1>
 
           <motion.div
-            initial={{ opaci
-              <strong className="text-foreground">AltSchool Africa</strong>,
-              where I earned my stripes in rigorous Frontend Engineering.
-            </p>
-            <p>
-              Today, I don't just build websites; I architect digital
-              ecosystems. While my hands write{" "}
-              <span className="text-cyan-400 font-medium">React & Next.js</span>
-              , my mind studies{" "}
-              <span className="text-emerald-400 font-medium">
-                Cybersecurity
-          ty: 0, y: 20 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="prose prose-invert prose-lg text-muted-foreground font-sans leading-relaxed"
@@ -102,9 +91,21 @@ export default function AboutPage() {
             </p>
             <p>
               My journey began in Nigeria, where I developed a fascination for
-              how things work—and how they break. This curiosity led me to further progress to refine my craft in{" "}
-              <strong className="text-foreground">Cybersecurity </strong>,
-              
+              how things work—and how they break. This curiosity led me to further refine
+              my craft in{" "}
+              <strong className="text-foreground">Software Engineering</strong>,
+              at{" "}
+              <strong className="text-foreground">AltSchool Africa</strong>,
+              where I earned my stripes in rigorous Frontend Engineering.
+            </p>
+            <p>
+              Today, I don't just build websites; I architect digital
+              ecosystems. While my hands write{" "}
+              <span className="text-cyan-400 font-medium">React & Next.js</span>
+              , i currently study{" "}
+              <span className="text-emerald-400 font-medium">
+                Cybersecurity
+              </span>{" "}
               at Miva University, ensuring that every pixel I push is fortified
               against modern threats.
             </p>
@@ -344,4 +345,4 @@ function SkillBar({
       </div>
     </div>
   );
-}
+        }

@@ -79,7 +79,18 @@ export default function AboutPage() {
           </motion.h1>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opaci
+              <strong className="text-foreground">AltSchool Africa</strong>,
+              where I earned my stripes in rigorous Frontend Engineering.
+            </p>
+            <p>
+              Today, I don't just build websites; I architect digital
+              ecosystems. While my hands write{" "}
+              <span className="text-cyan-400 font-medium">React & Next.js</span>
+              , my mind studies{" "}
+              <span className="text-emerald-400 font-medium">
+                Cybersecurity
+          ty: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="prose prose-invert prose-lg text-muted-foreground font-sans leading-relaxed"
@@ -91,21 +102,9 @@ export default function AboutPage() {
             </p>
             <p>
               My journey began in Nigeria, where I developed a fascination for
-              how things work—and how they break. This curiosity led me to the
-              UK, where I refined my craft in{" "}
-              <strong className="text-foreground">Business & Computing</strong>,
-              and later to{" "}
-              <strong className="text-foreground">AltSchool Africa</strong>,
-              where I earned my stripes in rigorous Frontend Engineering.
-            </p>
-            <p>
-              Today, I don't just build websites; I architect digital
-              ecosystems. While my hands write{" "}
-              <span className="text-cyan-400 font-medium">React & Next.js</span>
-              , my mind studies{" "}
-              <span className="text-emerald-400 font-medium">
-                Cybersecurity
-              </span>{" "}
+              how things work—and how they break. This curiosity led me to further progress to refine my craft in{" "}
+              <strong className="text-foreground">Cybersecurity </strong>,
+              
               at Miva University, ensuring that every pixel I push is fortified
               against modern threats.
             </p>
